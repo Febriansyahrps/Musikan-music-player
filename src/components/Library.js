@@ -33,7 +33,7 @@ const LibraryContainer = styled.div`
   position: fixed;
   top: 0;
   left: 0;
-  width: 20rem;
+  width: 30%;
   height: 100%;
   box-shadow: 2px 2px 50px rgb(204, 204, 211);
   overflow: scroll;
@@ -68,6 +68,12 @@ const LibraryContainer = styled.div`
     background-color: rgba(118, 202, 218, 0.5);
     border-radius: 20px;
     border: transparent;
+  }
+  @media (max-width: 960px) {
+    width: 40%;
+  }
+  @media screen and (max-width: 640px) {
+    width: 100%;
   }
 `;
 

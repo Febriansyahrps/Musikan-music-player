@@ -213,6 +213,9 @@ const PlayerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
+  @media (min-height: 1200px) {
+    min-height: 20vh;
+  }
 `;
 const TimePlayer = styled.div`
   width: 50%;
@@ -236,16 +239,31 @@ const TimePlayer = styled.div`
       color: #fefbf3;
     }
   }
-  @media (max-width: 768px) {
-    width: 90%;
+  @media (max-width: 960px) {
+    width: 75%;
+  }
+  @media (min-height: 1200px) {
+    width: 75%;
+  }
+  @media (max-width: 640px) {
+    p {
+      font-size: 0.75rem;
+    }
+    width: 100%;
   }
 `;
 const PlayControl = styled.div`
   display: flex;
   width: 30%;
   justify-content: space-around;
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
     width: 60%;
+  }
+  @media (min-height: 1200px) {
+    width: 60%;
+  }
+  @media (max-width: 640px) {
+    width: 80%;
   }
 `;
 const PlayerButton = styled.button`
@@ -268,23 +286,23 @@ const PlayerButton = styled.button`
   }
 `;
 const VolumeControl = styled.div`
-  transition: 0.25s ease-in;
-  margin-right: 1rem;
-  right: 20%;
   position: absolute;
+  transition: 0.25s ease-in;
+  right: 20%;
   display: flex;
   flex-direction: column;
   align-items: center;
   font-size: 0.9rem;
   color: #04293f;
   ${(props) => !props.libraryActive} {
-    right: 15%;
+    right: 10%;
   }
   ${(props) => !props.darkModeActive} {
     color: #fefbf3;
     opacity: 75%;
   }
   input {
+    height: 15vh;
     width: 1rem;
     -webkit-appearance: slider-vertical;
   }
@@ -293,6 +311,24 @@ const VolumeControl = styled.div`
     cursor: pointer;
     background: #c4dddd;
     border-radius: 1rem;
+  }
+  @media (max-width: 960px) {
+    right: 5%;
+    ${(props) => !props.libraryActive} {
+      right: 2%;
+    }
+  }
+  @media (min-height: 1200px) {
+    right: 7.5%;
+    ${(props) => !props.libraryActive} {
+      right: 5%;
+    }
+    input {
+      height: 12.5vh;
+    }
+  }
+  @media screen and (max-width: 640px) {
+    display: none;
   }
 `;
 

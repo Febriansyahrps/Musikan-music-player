@@ -23,9 +23,6 @@ const SongContainer = styled.div`
   h2 {
     padding: 0.5rem 0 0 0;
   }
-  h3 {
-    font-size: 1.25rem;
-  }
   ${(props) => !props.active} {
     img {
       -webkit-animation: spin 10s linear infinite;
@@ -57,10 +54,20 @@ const SongContainer = styled.div`
       transform: rotate(360deg);
     }
   }
-
-  @media (max-width: 768px) {
+  @media (max-width: 960px) {
+    img {
+      width: 40%;
+    }
+  }
+  @media (min-height: 1200px) {
     img {
       width: 50%;
+    }
+  }
+  @media (max-width: 640px) {
+    min-height: 60vh;
+    img {
+      width: 60%;
     }
   }
 `;

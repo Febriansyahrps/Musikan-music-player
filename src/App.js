@@ -59,7 +59,13 @@ const AppContainer = styled.div`
   background: #fefbf3;
   transition: all 0.5s ease;
   ${(props) => !props.libraryActive} {
-    margin-left: 20rem;
+    margin-left: 30%;
+    @media (max-width: 960px) {
+      margin-left: 40%;
+    }
+    @media (max-width: 640px) {
+      margin: 0;
+    }
   }
   ${(props) => !props.darkModeActive} {
     background: #04293f;

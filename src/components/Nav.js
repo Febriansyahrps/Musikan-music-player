@@ -91,15 +91,10 @@ const NavRight = styled.div`
         color: #04293f;
       }
     }
-    @media (max-width: 768px) {
-      h1 {
-        font-size: 1.5rem;
-      }
-      justify-content: space-between;
-      padding: 0 3rem;
-      button {
-        z-index: 10;
-      }
+  }
+  @media screen and (max-width: 640px) {
+    button {
+      z-index: 10;
     }
   }
 `;

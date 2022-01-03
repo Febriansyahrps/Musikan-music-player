@@ -21,5 +21,16 @@ const GlobalStyle = styled.createGlobalStyle`
     color: #04293f;
     opacity: 75%;
   }
+  @media screen and (max-width: 480px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+    h2 {
+      font-size: 1.25rem;
+    }
+    h3 {
+      font-size: 1rem;
+    }
+  }
 `;
 export default GlobalStyle;
