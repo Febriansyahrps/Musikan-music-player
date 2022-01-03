@@ -69,7 +69,7 @@ const LibraryContainer = styled.div`
     border-radius: 20px;
     border: transparent;
   }
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     width: 40%;
   }
   @media screen and (max-width: 640px) {

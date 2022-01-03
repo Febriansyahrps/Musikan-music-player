@@ -213,7 +213,7 @@ const PlayerContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  @media (min-height: 1200px) {
+  @media screen and (min-height: 1200px) {
     min-height: 20vh;
   }
 `;
@@ -239,13 +239,13 @@ const TimePlayer = styled.div`
       color: #fefbf3;
     }
   }
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     width: 75%;
   }
-  @media (min-height: 1200px) {
+  @media screen and (min-height: 1200px) {
     width: 75%;
   }
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     p {
       font-size: 0.75rem;
     }
@@ -256,13 +256,13 @@ const PlayControl = styled.div`
   display: flex;
   width: 30%;
   justify-content: space-around;
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     width: 60%;
   }
-  @media (min-height: 1200px) {
+  @media screen and (min-height: 1200px) {
     width: 60%;
   }
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     width: 80%;
   }
 `;
@@ -312,13 +312,13 @@ const VolumeControl = styled.div`
     background: #c4dddd;
     border-radius: 1rem;
   }
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     right: 5%;
     ${(props) => !props.libraryActive} {
       right: 2%;
     }
   }
-  @media (min-height: 1200px) {
+  @media screen and (min-height: 1200px) {
     right: 7.5%;
     ${(props) => !props.libraryActive} {
       right: 5%;

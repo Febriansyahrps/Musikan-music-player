@@ -54,17 +54,17 @@ const SongContainer = styled.div`
       transform: rotate(360deg);
     }
   }
-  @media (max-width: 960px) {
+  @media screen and (max-width: 960px) {
     img {
       width: 40%;
     }
   }
-  @media (min-height: 1200px) {
+  @media screen and (min-height: 1200px) {
     img {
       width: 50%;
     }
   }
-  @media (max-width: 640px) {
+  @media screen and (max-width: 640px) {
     min-height: 60vh;
     img {
       width: 60%;

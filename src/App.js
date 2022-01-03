@@ -60,10 +60,10 @@ const AppContainer = styled.div`
   transition: all 0.5s ease;
   ${(props) => !props.libraryActive} {
     margin-left: 30%;
-    @media (max-width: 960px) {
+    @media screen and (max-width: 960px) {
       margin-left: 40%;
     }
-    @media (max-width: 640px) {
+    @media screen and (max-width: 640px) {
       margin: 0;
     }
   }
