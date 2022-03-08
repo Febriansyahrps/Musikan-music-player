@@ -12,6 +12,7 @@ import GlobalStyle from "./components/GlobalStyle";
 
 function App() {
   // state
+  // eslint-disable-next-line no-unused-vars
   const [songs, setSongs] = useState(data());
   const [currentSong, setCurrentSong] = useState(songs[0]);
   const [isPlaying, setIsPlaying] = useState(false);
@@ -59,7 +60,10 @@ const AppContainer = styled.div`
   background: #fefbf3;
   transition: all 0.5s ease;
   ${(props) => !props.libraryActive} {
-    margin-left: 30%;
+    margin-left: 25%;
+    @media screen and (max-width: 1200px) {
+      margin-left: 30%;
+    }
     @media screen and (max-width: 960px) {
       margin-left: 40%;
     }
